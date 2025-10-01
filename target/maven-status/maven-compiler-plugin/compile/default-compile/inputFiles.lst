@@ -1,3 +1,8 @@
 /home/Coder/Vídeos/Mini-tienda/src/main/java/com/codeup/mini/tienda/MiniTienda.java
-/home/Coder/Vídeos/Mini-tienda/src/main/java/com/codeup/mini/tienda/domain/products.java
-/home/Coder/Vídeos/Mini-tienda/src/main/java/com/codeup/mini/tienda/ui/console/InventanrioFrame.java
+/home/Coder/Vídeos/Mini-tienda/src/main/java/com/codeup/mini/tienda/database/ProductsDAO.java
+/home/Coder/Vídeos/Mini-tienda/src/main/java/com/codeup/mini/tienda/database/TestConnection.java
+/home/Coder/Vídeos/Mini-tienda/src/main/java/com/codeup/mini/tienda/domain/Appliances.java
+/home/Coder/Vídeos/Mini-tienda/src/main/java/com/codeup/mini/tienda/domain/Foods.java
+/home/Coder/Vídeos/Mini-tienda/src/main/java/com/codeup/mini/tienda/domain/Inventory.java
+/home/Coder/Vídeos/Mini-tienda/src/main/java/com/codeup/mini/tienda/domain/Products.java
+/home/Coder/Vídeos/Mini-tienda/src/main/java/com/codeup/mini/tienda/ui/console/InventoryFrame.java
