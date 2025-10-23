@@ -4,7 +4,7 @@
 
 package com.codeup.mini.tienda;
 
-import com.codeup.mini.tienda.database.TestConnection;
+import com.codeup.mini.tienda.config.TestConnection;
 import java.sql.Connection;
 
 /**
@@ -14,12 +14,12 @@ import java.sql.Connection;
 public class MiniTienda {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        
         Connection conn = TestConnection.getConexion();
-if (conn != null) {
-    System.out.println("✅ Conexión exitosa a la base de datos.");
-} else {
-    System.out.println("❌ No se pudo conectar.");
-}
-    }
+        if (conn != null) {
+            System.out.println("✅ Conexión exitosa a la base de datos.");
+        } else {
+            System.out.println("❌ No se pudo conectar.");
+        }
+            }
 }

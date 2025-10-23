@@ -9,15 +9,15 @@ import java.util.HashMap;
 
 /**
  *
- * @author Coder
+ * @author Santiago Ortega
  */
 public class Inventory {
-    private ArrayList <Products> products = new ArrayList();
+    private ArrayList <Product> products = new ArrayList();
     private HashMap<String, Integer> stock = new HashMap();
     private double[] pryces = new double[100];
     private ArrayList<String> ticket = new ArrayList<>();
     
-    public void productAdd(Products p, int quantity){
+    public void productAdd(Product p, int quantity){
         products.add(p);
         stock.put(p.getName(), quantity);
         if (products.size() > pryces.length){
@@ -35,7 +35,7 @@ public class Inventory {
     public ArrayList<Object[]> listProducts(){
         
         ArrayList<Object[]> list = new ArrayList<>();
-        for (Products p : products){
+        for (Product p : products){
             int quantity = stock.getOrDefault(p.getName(), 0);
             list.add(new Object[]{p.getName(),p.getPrice(), quantity, p.getDescription()});
         }
@@ -44,7 +44,7 @@ public class Inventory {
     }
     
     public boolean productBuy(String name, int quantity){
-        for (Products p : products){
+        for (Product p : products){
             if (p.getName().equalsIgnoreCase(name)) {
                 int available = stock.getOrDefault(name, 0);
                 if (available >= quantity){
@@ -83,7 +83,7 @@ public class Inventory {
         return summary.toString();
     }
     
-    public ArrayList<Products> getProducts(){
+    public ArrayList<Product> getProducts(){
         return products;
     }
     
